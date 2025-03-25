@@ -78,6 +78,16 @@
       }
 
       @media only screen and (max-width: 749px) {
+
+        .cust_bann_cont p{
+          display:none;
+          
+        }
+        .cust_bann_cont h1{
+          display:none;
+        }
+        
+        
         .bann_head_cont {
           display: none;
         }
