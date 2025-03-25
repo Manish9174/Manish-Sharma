@@ -87,6 +87,15 @@
           margin:0px;
         }
 
+        .bann_cont_mob h1{
+font-size: 30px;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+vertical-align: middle;
+
+        }
+
         .sec_bann_col{
           display:none;
         }
