@@ -7,7 +7,7 @@
         </div>
         <div class="bann_log">
           <img
-            src="https://cdn.shopify.com/s/files/1/0644/8830/8805/files/Group_1000007777.png"
+            src="{{ section.settings.logo }}"
           />
         </div>
 
@@ -61,6 +61,11 @@
     "name": "Test Banner",
     "class": "main_cust_bann",    
     "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Insert Logo"
+      }
       
     ],
     "presets": [
