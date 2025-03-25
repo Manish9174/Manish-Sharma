@@ -79,6 +79,9 @@
 
       @media only screen and (max-width: 749px) {
 
+        .bann_cont_mob h1, p{
+          margin:0px;
+        }
 
         .sec_bann_col{
           display:none;
