@@ -96,6 +96,16 @@ vertical-align: middle;
 
         }
 
+        .bann_cont_mob p{
+              font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 2rem 0px 0px;
+          
+        }
+
         .sec_bann_col{
           display:none;
         }
