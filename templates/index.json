@@ -11,7 +11,9 @@
   "sections": {
     "ms_banner_tBWWWk": {
       "type": "ms_banner",
-      "settings": {}
+      "settings": {
+        "logo": "shopify://shop_images/Group_1000007777.png"
+      }
     }
   },
   "order": [
