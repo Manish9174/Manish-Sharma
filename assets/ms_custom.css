@@ -30,7 +30,6 @@
         }
 
 .head_btn span{
-   color: black;
   font-size:18px;
   text-transform:uppercase;
 }
@@ -54,9 +53,7 @@
             left: 0;
         }
 
-        .head_btn span:hover {
-            color: white;
-        }
+
 
         /* Ensure text and image remain above animation */
         .head_btn span,
