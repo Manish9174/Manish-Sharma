@@ -236,7 +236,11 @@ text-transform: uppercase;
 }
 
 .bann_btn_2 {
-     align-items: center;
+      position: relative;
+            background-color: black;
+            border: none;
+            color: white;
+            align-items: center;
             display: flex;
             justify-content: space-between;
             gap: 10px;
