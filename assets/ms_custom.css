@@ -263,6 +263,9 @@ text-transform: uppercase;
      .bann_btn_2:hover::before {
             left: 0;
         }
+   .bann_btn_2:hover {
+            color: black;
+        }
 
 
 /* test banner css*/
