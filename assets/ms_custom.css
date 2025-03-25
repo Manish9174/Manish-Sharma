@@ -232,5 +232,9 @@ text-transform: uppercase;
   width:25%;
 }
 
+.head_btn:hover{
+  color:white;
+}
+
 
 /* test banner css*/
