@@ -32,6 +32,7 @@
 .head_btn span{
    color: black;
   font-size:18px;
+  text-transform:uppercase;
 }
    
         /* Pseudo-element for sliding effect */
