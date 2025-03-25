@@ -34,6 +34,8 @@
   font-size:18px;
   text-transform:uppercase;
 }
+
+
    
         /* Pseudo-element for sliding effect */
         .head_btn::before {
@@ -52,7 +54,7 @@
             left: 0;
         }
 
-        .head_btn:hover {
+        .head_btn span:hover {
             color: white;
         }
 
