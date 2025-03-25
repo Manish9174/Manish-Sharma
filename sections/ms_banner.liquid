@@ -6,9 +6,11 @@
           />
         </div>
         <div class="bann_log">
+          {% if section.settings.logo %}
           <img
             src="{{ section.settings.logo | img_url : 'master' }} "
           />
+            {% endif %}
         </div>
 
         <div class="bann_head_cont">
