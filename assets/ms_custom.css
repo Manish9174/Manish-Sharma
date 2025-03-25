@@ -260,5 +260,9 @@ text-transform: uppercase;
             z-index: 0;
 }
 
+     .bann_btn_2:hover::before {
+            left: 0;
+        }
+
 
 /* test banner css*/
