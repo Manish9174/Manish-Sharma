@@ -89,6 +89,11 @@
         top: 57%;
         }
 
+        .bann_btm_cont p{
+    font-size: 14px;
+    line-height: normal;
+        }
+
         .bann_btn_2 img {
     width: 15%!important;
 }
