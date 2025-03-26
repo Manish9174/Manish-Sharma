@@ -12,7 +12,11 @@
     "ms_banner_tBWWWk": {
       "type": "ms_banner",
       "settings": {
-        "logo": "shopify://shop_images/Group_1000007777.png"
+        "logo": "shopify://shop_images/Group_1000007777.png",
+        "head_cnt": "Find the ideal gift for your loved ones.",
+        "top_btn": "choose gift",
+        "bann_img": "shopify://shop_images/Frame.png",
+        "btm_cont": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
       }
     }
   },
