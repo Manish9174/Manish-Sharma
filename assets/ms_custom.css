@@ -276,4 +276,14 @@ text-transform: uppercase;
             z-index: 1;
         }
 
+
+.bann_btm_cont p{
+font-size: 42.67px;
+line-height: 35.8px;
+letter-spacing: 0px;
+text-align: center;
+vertical-align: middle;
+margin:0px;
+}
+
 /* test banner css*/
