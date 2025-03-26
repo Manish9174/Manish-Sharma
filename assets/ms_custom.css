@@ -79,7 +79,7 @@
       @media only screen and (max-width: 749px) {
 
 .cust_bann_cont{
-  width:100%;
+  width:100%!important;
 }
         .sec_banner_sect{
           display:block!important;
