@@ -288,6 +288,10 @@ margin:0px;
 
 .bann_btm_cont{
   background-color:#F5F5F5;
+  .bann_btm_cont {
+    background-color: #f5f5f5;
+    padding: 12px 0px 12px;
+
 }
 
 /* test banner css*/
