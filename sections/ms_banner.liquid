@@ -18,7 +18,7 @@
         </div>
         <div class="bann_head_btn">
           <button class="head_btn">
-            <span>choose gift</span><img
+            <span>{{ section.settings.top_btn }}</span><img
               class="btn_icon"
               src="https://cdn.shopify.com/s/files/1/0644/8830/8805/files/Line_15.png?v=1742643409"
             />
@@ -83,6 +83,19 @@
         "id": "head_cnt",
         "label": "Top Announcement Bar Text",
         "default":"Find the ideal gift for your loved ones."
+      },
+
+      {
+        "type": "text",
+        "id": "top_btn",
+        "label": "Announcement Bar Button Text",
+        "default":"choose gift"
+      },
+      {
+       "type": "image_picker",
+        "id": "bann_img",
+        "label": "upload Banner Image"
+        
       },
 
       {
