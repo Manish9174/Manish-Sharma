@@ -221,22 +221,7 @@ vertical-align: middle;
 
       }
 
-      .cust_bann_cont button{
-        background-color: black;
-        border: none;
-        color: white;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 30px;
-letter-spacing: 0px;
-text-align: center;
-vertical-align: middle;
-text-transform: uppercase;
-        font-size:20px;
-
-      }
-
+     
 .bann_btn_2 img{
   width:25%;
 }
