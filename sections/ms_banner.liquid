@@ -14,7 +14,7 @@
         </div>
 
         <div class="bann_head_cont">
-          <p>Find the ideal gift for your loved ones.</p>
+          <p>{{ section.settings.head_cnt }}</p>
         </div>
         <div class="bann_head_btn">
           <button class="head_btn">
@@ -76,6 +76,13 @@
         "type": "image_picker",
         "id": "logo",
         "label": "Insert Logo"
+      },
+
+      {
+        "type": "text",
+        "id": "head_cnt",
+        "label": "Top Announcement Bar Text",
+        "default":"Find the ideal gift for your loved ones."
       },
 
       {
