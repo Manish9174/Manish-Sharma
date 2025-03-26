@@ -18,6 +18,10 @@
         "btn_url": "shopify://collections",
         "bann_img": "shopify://shop_images/Frame.png",
         "bann_head": "The Gift Guide",
+        "bann_parg": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+        "bann_btn": "Shop Now",
+        "bann_btn_url": "",
+        "sec_bann": "shopify://shop_images/Frame_2.png",
         "btm_cont": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
       }
     }
