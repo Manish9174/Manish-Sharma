@@ -54,9 +54,12 @@
           <p>
             {{ section.settings.bann_parg }}
           </p>
-          <button class="bann_btn_2">
+          <a href="{{ section.settings.bann_btn_url }}">
+              <button class="bann_btn_2">
            <span>{{ section.settings.bann_btn }}</span><img src="https://cdn.shopify.com/s/files/1/0644/8830/8805/files/Line_15_1.png"/>
           </button>
+          </a>
+        
           
         </div>
         <div class="sec_bann_col">
@@ -128,6 +131,12 @@
         "id": "bann_btn",
         "label": "Banner Button Text",
         "default":"Shop Now"
+      },
+
+      {
+        "type": "url",
+        "id": "bann_btn_url",
+        "label": "Banner Button Link"
       },
 
       {
