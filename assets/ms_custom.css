@@ -80,12 +80,13 @@
 
 
         .bann_btn_2{
-          padding:10px 15px!important;
-          font-size:12px!important;
-                     gap: 7px !important;
-              justify-content: center;
-
-        width: 38%;
+                 padding: 15px 15px !important;
+        font-size: 12px !important;
+        gap: 7px !important;
+        justify-content: center;
+        width: 41%;
+        position: absolute !important;
+        top: 57%;
         }
 
         .bann_btn_2 img {
