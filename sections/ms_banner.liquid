@@ -17,12 +17,15 @@
           <p>{{ section.settings.head_cnt }}</p>
         </div>
         <div class="bann_head_btn">
-          <button class="head_btn">
+          <a href="{{ section.settings.btn_url }}">
+            <button class="head_btn">
             <span>{{ section.settings.top_btn }}</span><img
               class="btn_icon"
               src="https://cdn.shopify.com/s/files/1/0644/8830/8805/files/Line_15.png?v=1742643409"
             />
           </button>
+          </a>
+          
         </div>
       </div>
       <div class="banner_sect">
@@ -32,7 +35,7 @@
       </div>
       <div class="banner_sect_mob">
         <div class="bann_cont_mob">
-         <h1>The Gift Guide</h1>
+         <h1>{{ section.settings.bann_head }}</h1>
           <p>
            Discover Joy: Your Ultimate Holiday Gift Destination.
           </p>
@@ -88,14 +91,27 @@
       {
         "type": "text",
         "id": "top_btn",
-        "label": "Announcement Bar Button Text",
+        "label": "Top Announcement Bar Button Text",
         "default":"choose gift"
+      },
+
+      {
+        "type": "url",
+        "id": "btn_url",
+        "label": "Top Announcement Button link"
       },
       {
        "type": "image_picker",
         "id": "bann_img",
         "label": "upload Banner Image"
         
+      },
+
+      {
+
+        "type": "text",
+        "id": "bann_head",
+        "label": "Banner Heading"
       },
 
       {
