@@ -64,7 +64,7 @@
         </div>
         <div class="sec_bann_col">
           <img
-            src="https://cdn.shopify.com/s/files/1/0644/8830/8805/files/Frame_2.png"
+            src="{{ section.settings.sec_bann | img_url : 'master' }}"
           />
         </div>
       </div>
@@ -137,6 +137,13 @@
         "type": "url",
         "id": "bann_btn_url",
         "label": "Banner Button Link"
+      },
+
+    {
+       "type": "image_picker",
+        "id": "sec_bann",
+        "label": "Upload Second Banner Image"
+        
       },
 
       {
