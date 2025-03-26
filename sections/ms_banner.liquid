@@ -55,7 +55,7 @@
             {{ section.settings.bann_parg }}
           </p>
           <button class="bann_btn_2">
-           <span>Shop Now</span><img src="https://cdn.shopify.com/s/files/1/0644/8830/8805/files/Line_15_1.png"/>
+           <span>{{ section.settings.bann_btn }}</span><img src="https://cdn.shopify.com/s/files/1/0644/8830/8805/files/Line_15_1.png"/>
           </button>
           
         </div>
@@ -121,6 +121,13 @@
         "id": "bann_parg",
         "label": "Banner Text",
         "default":"Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
+      },
+
+      {
+        "type": "text",
+        "id": "bann_btn",
+        "label": "Banner Button Text",
+        "default":"Shop Now"
       },
 
       {
