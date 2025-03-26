@@ -78,9 +78,11 @@
 
       @media only screen and (max-width: 749px) {
 
-
+.cust_bann_cont{
+  width:100%;
+}
         .sec_banner_sect{
-          display:block;
+          display:block!important;
         }
         
         .bann_cont_mob{
