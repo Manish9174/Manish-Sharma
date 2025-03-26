@@ -90,8 +90,8 @@
         }
 
         .bann_btm_cont p{
-    font-size: 14px;
-    line-height: normal;
+    font-size: 14px!important;
+    line-height: normal!important;
         }
 
         .bann_btn_2 img {
