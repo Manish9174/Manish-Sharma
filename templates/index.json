@@ -15,7 +15,9 @@
         "logo": "shopify://shop_images/Group_1000007777.png",
         "head_cnt": "Find the ideal gift for your loved ones.",
         "top_btn": "choose gift",
+        "btn_url": "shopify://collections",
         "bann_img": "shopify://shop_images/Frame.png",
+        "bann_head": "The Gift Guide",
         "btm_cont": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
       }
     }
