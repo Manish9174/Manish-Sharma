@@ -6,11 +6,14 @@
           />
         </div>
         <div class="bann_log">
+          <a href="{{  }}">
           {% if section.settings.logo %}
+            
           <img
             src="{{ section.settings.logo | img_url : 'master' }} "
           />
             {% endif %}
+            </a>
         </div>
 
         <div class="bann_head_cont">
@@ -111,7 +114,8 @@
 
         "type": "text",
         "id": "bann_head",
-        "label": "Banner Heading"
+        "label": "Banner Heading",
+        "default":"The Gift Guide"
       },
 
       {
