@@ -33,8 +33,9 @@
               {% assign size_values = '' %}
 
               {% for option in product.options %}
-
-                
+               {% assign option_name = option | downcase %}
+                {% assign option_index = forloop.index0 %}
+                {{ option_index }}
 
                 {% endfor %}
               
