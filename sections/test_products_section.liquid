@@ -22,7 +22,13 @@
             <h3>{{ product.title }}</h3>
             <p class="pop_prc">{{ product.price | money }}</p>
             <p class="pop_desc">{{ product.description | strip_html | truncate:100 }}</p>
-            <span class="close-btn"></span>
+              <span class="close-btn" onclick="closePopup('{{ product.id }}')">×</span>            
+          </div>
+          <div class="popup-content">
+            <form class="" method="post" action="/cart/add">
+              
+            </form>
+            
           </div>
         </div>
       {% endfor %}
