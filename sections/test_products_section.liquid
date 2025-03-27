@@ -6,8 +6,9 @@
 </h2>
   <div class="cust_feat">
     {% for block in section.blocks %}
+      {% assign product = block.settings.test_prod %}
          <div class="cust_product_item">
-           
+           <img src="{{ block.settings.prod_bann }}">
     </div>
     {% endfor %}
  
@@ -24,6 +25,26 @@
     "name": "Test Products Section",
     "settings": [
       
+    ],
+
+    "blocks": [
+      {
+        "name":"Product Block",
+        "type": "slide",
+        "settings":[
+          {
+            "type": "product",
+            "id": "test_prod",
+            "label": "Select Product for block",
+          },
+          {
+            "type": "image_picker",
+            "id": "prod_bann",
+            "label": "Select Image for Product Column"
+          }
+        ]
+       
+      }
     ],
     "presets": [
       {
