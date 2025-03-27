@@ -27,6 +27,17 @@
     },
     "test_products_section_7RKRpE": {
       "type": "test_products_section",
+      "blocks": {
+        "slide_mHPY3F": {
+          "type": "slide",
+          "settings": {
+            "test_prod": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_mHPY3F"
+      ],
       "settings": {}
     }
   },
