@@ -27,6 +27,11 @@
           <div class="popup-content">
             <form class="" method="post" action="/cart/add">
               <input type="hidden" name="id" id="variant-id-{{ product.id }}" value="{{ product.variants.first.id }}">
+
+               <!-- Color Options (Above Size) -->
+              {% assign color_values = '' %}
+              {% assign size_values = '' %}
+              
             <button type="submit"> add to cart{{  }}</button>
             </form>
             
