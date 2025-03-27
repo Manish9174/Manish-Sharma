@@ -22,7 +22,7 @@
             <h3>{{ product.title }}</h3>
             <p class="pop_prc">{{ product.price | money }}</p>
             <p class="pop_desc">{{ product.description | strip_html | truncate:100 }}</p>
-            
+            <span class="close-btn"></span>
           </div>
         </div>
       {% endfor %}
