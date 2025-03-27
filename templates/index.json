@@ -62,6 +62,13 @@
             "test_prod": "classic-varsity-top",
             "prod_bann": "shopify://shop_images/image_826.png"
           }
+        },
+        "slide_CTWrUq": {
+          "type": "slide",
+          "settings": {
+            "test_prod": "dark-denim-top",
+            "prod_bann": "shopify://shop_images/image_827.png"
+          }
         }
       },
       "block_order": [
@@ -69,7 +76,8 @@
         "slide_4HEaG7",
         "slide_38Lkah",
         "slide_KJityE",
-        "slide_RWQiaN"
+        "slide_RWQiaN",
+        "slide_CTWrUq"
       ],
       "settings": {}
     }
