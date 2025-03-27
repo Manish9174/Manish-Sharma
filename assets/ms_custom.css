@@ -320,6 +320,13 @@ a{
 
 /*test products section css*/
 
+.main_feat_section{
+      display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
 
 
 
