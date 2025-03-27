@@ -31,7 +31,8 @@
         "slide_mHPY3F": {
           "type": "slide",
           "settings": {
-            "test_prod": ""
+            "test_prod": "black-leather-bag",
+            "prod_bann": "shopify://shop_images/Group_1000008178.png"
           }
         }
       },
