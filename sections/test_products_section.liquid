@@ -1,71 +1,65 @@
 <div class="main_feat_section page-width">
-<div class="cust_head">
-<h2>
-  Tisso vison in the wild
-</h2>
-  <div class="cust_feat">
-    {% for block in section.blocks %}
-      {% assign product = block.settings.test_prod %}
-         <div class="cust_product_item">
-           {% if block.settings.prod_bann %}
-           <img src="{{ block.settings.prod_bann | img_url:'master' }}">
-             <div class="cust_pls_icon">
-               <img src="{{ block.settings.pls_icon | img_url: 'master' }}">
-             </div>
-             {% else %}
-                        <img src="{{ product.featured_image | img_url:'master' }}">
-           {% endif %}
-    </div>
-      <div class="popup-container">
-        <div class="popup-header">
-          <img src="{{ product.featured_image | img_url : 'master' }}">
+  <div class="cust_head">
+    <h2>Tisso vison in the wild</h2>
+    <div class="cust_feat">
+      {% for block in section.blocks %}
+        {% assign product = block.settings.test_prod %}
+        <div class="cust_product_item">
+          {% if block.settings.prod_bann %}
+            <img src="{{ block.settings.prod_bann | img_url:'master' }}">
+            <div class="cust_pls_icon">
+              <img src="{{ block.settings.pls_icon | img_url: 'master' }}">
+            </div>
+          {% else %}
+            <img src="{{ product.featured_image | img_url:'master' }}">
+          {% endif %}
         </div>
-      </div>
-    {% endfor %} 
+        <div class="popup-container">
+          <div class="popup-header">
+            <img src="{{ product.featured_image | img_url : 'master' }}">
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
-  
-
-  
-</div>
-
 
 {% schema %}
-  {
-    "name": "Test Products Section",
-    "settings": [
-      
-    ],
+{
+  "name": "Test Products Section",
+  "settings": [
 
-    "blocks": [
-      {
-        "name":"Product Block",
-        "type": "slide",
-        "settings":[
-          {
-            "type": "product",
-            "id": "test_prod",
-            "label": "Select Product for block",
-          },
-          {
-            "type": "image_picker",
-            "id": "prod_bann",
-            "label": "Select Image for Product Column"
-          },
-          {
-            "type": "image_picker",
-            "id": "pls_icon",
-            "label": "Plus Icon for popup click"
-          }
-        ]
-       
-      }
-    ],
-    "presets": [
-      {
-        "name": "Test Products Section"
-      }
-    ]
-    
-  }
+  ],
+
+  "blocks": [
+    {
+      "name":"Product Block",
+      "type": "slide",
+      "settings":[
+        {
+          "type": "product",
+          "id": "test_prod",
+          "label": "Select Product for block",
+        },
+        {
+          "type": "image_picker",
+          "id": "prod_bann",
+          "label": "Select Image for Product Column"
+        },
+        {
+          "type": "image_picker",
+          "id": "pls_icon",
+          "label": "Plus Icon for popup click"
+        }
+      ]
+
+    }
+  ],
+  "presets": [
+    {
+      "name": "Test Products Section"
+    }
+  ]
+
+}
 {% endschema %}
