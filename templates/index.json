@@ -24,9 +24,14 @@
         "sec_bann": "shopify://shop_images/Frame_2.png",
         "btm_cont": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
       }
+    },
+    "test_products_section_7RKRpE": {
+      "type": "test_products_section",
+      "settings": {}
     }
   },
   "order": [
-    "ms_banner_tBWWWk"
+    "ms_banner_tBWWWk",
+    "test_products_section_7RKRpE"
   ]
 }
