@@ -320,6 +320,30 @@ a{
     display: flex;
 }
 
+  .mob-icon {
+            width: 30px;
+            height: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .bar_mob {
+            width: 100%;
+            height: 4px;
+            background-color: black;
+            transition: 0.3s;
+        }
+        .mob-icon.active_mob .bar_mob:nth-child(1) {
+            transform: translateY(10px) rotate(45deg);
+        }
+        .mob-icon.active_mob .bar_mob:nth-child(2) {
+            opacity: 0;
+        }
+        .mob-icon.active_mob .bar_mob:nth-child(3) {
+            transform: translateY(-10px) rotate(-45deg);
+        }
+
 /* test banner css*/
 
 
