@@ -315,6 +315,11 @@ a{
   
 }
 
+.cust_bann_cont a{
+  justify-content: center;
+    display: flex;
+}
+
 /* test banner css*/
 
 
