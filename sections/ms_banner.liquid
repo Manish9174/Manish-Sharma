@@ -6,6 +6,11 @@
         <div class="bar_mob"></div>
         <div class="bar_mob"></div>
     </div>
+
+              <div class="mob_side-menu" id="mob_sideMenu">
+        <h2>Menu</h2>
+        <p>Navigation links go here</p>
+    </div>
         </div>
         <div class="bann_log">
           <a href="{{  }}">
@@ -78,7 +83,10 @@
     <script>
         function toggleMenu(icon) {
             icon.classList.toggle("active_mob");
+                      document.getElementById("mob_sideMenu").classList.toggle("active");
+
         }
+      
     </script>
 
 {% schema %}
