@@ -367,6 +367,10 @@ a{
       height: 7vh;
 }
 
+.mob_side-menu>.head_btn span{
+  font-size:15px;
+}
+
 /* test banner css*/
 
 
