@@ -333,7 +333,7 @@ a{
             height: 4px;
             background-color: black;
             transition: 0.3s;
-              display: block;
+              display: block!important;
 
         }
         .mob-icon.active_mob .bar_mob:nth-child(1) {
