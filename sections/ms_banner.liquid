@@ -1,7 +1,7 @@
 <div class="main_banner_sect">
       <div class="banner_head">
         <div class="mob_nav_icon">
-         <div class="menu-icon" onclick="toggleMenu(this)">
+         <div class="mob-icon" onclick="toggleMenu(this)">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -74,7 +74,11 @@
     <p>{{ section.settings.btm_cont }}</p>
   </div>
     </div>
-
+<script>
+       function toggleMenu(icon) {
+            icon.classList.toggle("active");
+        }
+</script>
 
 {% schema %}
   {
