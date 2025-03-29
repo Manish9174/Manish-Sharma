@@ -333,6 +333,8 @@ a{
             height: 4px;
             background-color: black;
             transition: 0.3s;
+              display: block;
+
         }
         .mob-icon.active_mob .bar_mob:nth-child(1) {
             transform: translateY(10px) rotate(45deg);
