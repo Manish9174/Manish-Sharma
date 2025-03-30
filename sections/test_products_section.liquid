@@ -79,25 +79,22 @@
 
 <script>
 
-  function openPopup(productId) {
+    function openPopup(productId) {
         document.getElementById(`popup-${productId}`).classList.add('active');
         document.getElementById(`overlay-${productId}`).classList.add('active');
     }
 
-  function closePopup(productId){
-    document.getElemetnById(`popup-${productId}`).classList.remove('active');
-    document.getElementById(`overlay-${productId}`).classList.remove('active');
-  }
-    
-  
+    function closePopup(productId) {
+        document.getElementById(`popup-${productId}`).classList.remove('active');
+        document.getElementById(`overlay-${productId}`).classList.remove('active');
+    }
 
-  function selectColorVariant(element, productId){
-    document.querySelectorAll('#popup-${productId} .color-option').forEach(option =>
-      option.classList.remove('active'));
-    element.classList.add(active);
-    updateVariant(productId);
-      
-  }
+    function selectColorVariant(element, productId) {
+        document.querySelectorAll(`#popup-${productId} .color-option`).forEach(option => option.classList.remove('active'));
+        element.classList.add('active');
+        updateVariant(productId);
+    }
+
   
 </script>
 
