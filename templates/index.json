@@ -22,7 +22,9 @@
         "bann_btn": "Shop Now",
         "bann_btn_url": "shopify://collections/all",
         "sec_bann": "shopify://shop_images/Frame_2.png",
-        "btm_cont": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
+        "btm_cont": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+        "mobtxt": "Find the ideal gift for your loved ones.",
+        "mobbtn": "choose Gift"
       }
     },
     "test_products_section_7RKRpE": {
@@ -32,48 +34,60 @@
           "type": "slide",
           "settings": {
             "test_prod": "black-leather-bag",
-            "prod_bann": "shopify://shop_images/image_822_1.png",
-            "pls_icon": "shopify://shop_images/Group_1000008190.png"
+            "cust_img": "shopify://shop_images/image_822_1.png",
+            "pls_icon": "shopify://shop_images/Group_1000008190.png",
+            "padtop": 50,
+            "padleft": 50
           }
         },
         "slide_4HEaG7": {
           "type": "slide",
           "settings": {
             "test_prod": "blue-silk-tuxedo",
-            "prod_bann": "shopify://shop_images/image_823.png",
-            "pls_icon": "shopify://shop_images/Group_1000008190.png"
+            "cust_img": "shopify://shop_images/image_823.png",
+            "pls_icon": "shopify://shop_images/Group_1000008190.png",
+            "padtop": 50,
+            "padleft": 50
           }
         },
         "slide_38Lkah": {
           "type": "slide",
           "settings": {
             "test_prod": "chequered-red-shirt",
-            "prod_bann": "shopify://shop_images/image_824.png",
-            "pls_icon": "shopify://shop_images/Group_1000008190.png"
+            "cust_img": "shopify://shop_images/image_824.png",
+            "pls_icon": "shopify://shop_images/Group_1000008190.png",
+            "padtop": 50,
+            "padleft": 50
           }
         },
         "slide_KJityE": {
           "type": "slide",
           "settings": {
             "test_prod": "classic-leather-jacket",
-            "prod_bann": "shopify://shop_images/image_825.png",
-            "pls_icon": "shopify://shop_images/Group_1000008190.png"
+            "cust_img": "shopify://shop_images/image_825.png",
+            "pls_icon": "shopify://shop_images/Group_1000008190.png",
+            "padtop": 50,
+            "padleft": 50
           }
         },
         "slide_RWQiaN": {
           "type": "slide",
           "settings": {
             "test_prod": "classic-varsity-top",
-            "prod_bann": "shopify://shop_images/image_826.png",
-            "pls_icon": "shopify://shop_images/Group_1000008190.png"
+            "cust_img": "shopify://shop_images/image_826.png",
+            "pls_icon": "shopify://shop_images/Group_1000008190.png",
+            "padtop": 50,
+            "padleft": 50
           }
         },
         "slide_CTWrUq": {
           "type": "slide",
           "settings": {
             "test_prod": "dark-denim-top",
-            "prod_bann": "shopify://shop_images/image_827.png",
-            "pls_icon": "shopify://shop_images/Group_1000008190.png"
+            "cust_img": "shopify://shop_images/image_827.png",
+            "pls_icon": "shopify://shop_images/Group_1000008190.png",
+            "padtop": 50,
+            "padleft": 50
           }
         }
       },
@@ -85,7 +99,9 @@
         "slide_RWQiaN",
         "slide_CTWrUq"
       ],
-      "settings": {}
+      "settings": {
+        "title": "Tisso vison in the wild"
+      }
     }
   },
   "order": [
