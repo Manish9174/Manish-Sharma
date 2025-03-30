@@ -66,6 +66,11 @@
             </form>
             
           </div>
+          <!-- JSON data specific to each product -->
+        <script>
+          window.productVariants_{{ product.id }} = {{ product.variants | json }};
+        </script>
+        <div class="popup-overlay" id="overlay-{{ product.id }}" onclick="closePopup('{{ product.id }}')"></div>
         </div>
       {% endfor %}
     </div>
