@@ -141,40 +141,74 @@
 
 {% schema %}
 {
-  "name": "Test Products Section",
-  "settings": [
+    "name": "Ecom Test",
+    "settings": [
 
-  ],
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Heading",
+                "default":"Tisso vison in the wild"
+              }
 
-  "blocks": [
-    {
-      "name":"Product Block",
-      "type": "slide",
-      "settings":[
+    ],
+    "blocks": [
         {
-          "type": "product",
-          "id": "test_prod",
-          "label": "Select Product for block",
-        },
-        {
-          "type": "image_picker",
-          "id": "prod_bann",
-          "label": "Select Image for Product Column"
-        },
-        {
-          "type": "image_picker",
-          "id": "pls_icon",
-          "label": "Plus Icon for popup click"
+            "name": "Slide",
+            "type": "slide",
+            "settings": [
+
+
+                {
+                    "type": "product",
+                    "id": "test_prod",
+                    "label": "Select product for block"
+                },
+              {
+                "type":"image_picker",
+                "id":"cust_img",
+                "label":"Insert Custom Image"
+
+              },
+              {
+                "type": "image_picker",
+                "id": "pls_icon",
+                "label": "Icon for Open Popup"
+              },
+              {
+                "type": "range",
+                "id": "padtop",
+                "label": "Icon Position to Top",
+                "max": 100,
+                "min": 1,
+                "unit": "%",
+                "step": 1,
+                "default":50
+                
+              },
+
+              {
+                "type": "range",
+                "id": "padleft",
+                 "label": "Icon Position to Left",
+                "max": 100,
+                "min": 1,
+                "unit": "%",
+                "step": 1,
+                "default":50
+              }
+            ]
         }
-      ]
-
-    }
-  ],
-  "presets": [
-    {
-      "name": "Test Products Section"
-    }
-  ]
-
+    ],
+    "presets": [
+        {
+            "name": "Ecom Test",
+            "category": "product",
+            "blocks": [
+                { "type": "slide" },
+                { "type": "slide" }
+            ]
+        }
+    ]
 }
 {% endschema %}
