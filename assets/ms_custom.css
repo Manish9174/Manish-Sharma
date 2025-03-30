@@ -376,14 +376,241 @@ a{
 
 /*test products section css*/
 
-.cust_feat{
-    flex-wrap: wrap;
+    .cust_feat {
+          flex-wrap: wrap;
       gap: 1rem;
       padding: 0px 0px 4rem;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .cust_product_item{
+          display: flex;
+      width: 30%;
+      align-items: center;
+    }
+
+    .item_img img{
+        width: 100%;
+
+  }
+
+    .cust_head h2{
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 120%;
+      letter-spacing: 0px;
+      vertical-align: middle;
+    }
+
+    /* Popup styles */
+    .popup-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+            width: 371px;
+      height: 447px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+    }
+
+    .popup-container.active {
+        display: block;
+    }
+
+    .popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+
+    .popup-overlay.active {
+        display: block;
+    }
+
+    .popup-header {
+          display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+            gap: 1rem;
+    }
+
+    .popup-header img {
+        width: 120px;
+        height: 140px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .popup-header h3 {
+      font-family: Jost;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin:0px;
+    }
+
+    .popup-content {
+        margin-top: 10px;
+    }
+
+    .popup-content p {
+        font-size: 14px;
+        color: #555;
+    }
+
+    /* Color swatches */
+    .color-options {
+        display: flex;
+        gap: 0px;
+        margin-top: 10px;
+    }
+
+    .color-option {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+         width: 100%;
+      height: 40px;
+      border: 0.5px solid black;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: capitalize;
+      gap: 2rem;
+    }
+
+    .color-option.active {
+        background: black;
+        color: white;
+    }
+
+    /* Size dropdown */
+    
+
+    /* Add to Cart */
+    .add-to-cart-btn {
+        width: 100%;
+        padding: 12px;
+        background: black;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    .close-btn {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .cust_clr{
+      width: 5px;
+      height: inherit;
+          border: 0.5px solid black;
+    }
+
+    .pop_head .pop_prc{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: 0px;
+      vertical-align: middle;
+      margin: 0px;
+      padding: 5px 0px 5px;
+    }
+
+      .pop_head .pop_desc{
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 110.00000000000001%;
+    }
+
+  .cust_pls_icon{
+    position:absolute;
+    cursor:pointer;
+  }
+
+  .item_img{
+    position:relative;
+  }
+
+
+.size-dropdown {
+   
+    appearance: none;
 }
+
+
+  .bdr-1{
+        border-right: none;
+  }
+
+    .bdr-2{
+      border-left: none;
+    }
+   .size_icon_cust {
+        background-color: #f1f1f1;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background 0.3s ease;
+        position: relative;
+    }
+    .size_icon_cust:hover {
+        background-color: #ddd;
+    }
+    .size_arrow {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .size-dropdown {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 10px;
+        display: none;
+        background-color: white;
+        border: 0.5px solid #000000;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        padding: 10px;
+    }
+    .dropdown-open .size-dropdown {
+        display: block;
+    }
+    .dropdown-open .size_arrow {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
 
 
 
