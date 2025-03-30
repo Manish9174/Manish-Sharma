@@ -83,6 +83,12 @@
         document.getElementById(`popup-${productId}`).classList.add('active');
         document.getElementById(`overlay-${productId}`).classList.add('active');
     }
+
+  function closePopup(productId){
+    document.getElemetnById(`popup-${productId}`).classList.remove('active');
+    document.getElementById(`overlay-${productId}`).classList.remove('active');
+  }
+    
   
 
   function selectColorVariant(element, productId){
