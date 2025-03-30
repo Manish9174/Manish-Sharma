@@ -40,6 +40,7 @@
                   <label>{{ option }}</label>
                   <div class="color-options">
                     {% for variant in product.variants  %}
+                      {% assign color_value = variant.options[0] %}
                       <div class="color-option bdr">
                         <span>
                           {{ color_values }}
