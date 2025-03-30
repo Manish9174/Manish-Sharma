@@ -1,38 +1,57 @@
 <div class="main_feat_section page-width">
   <div class="cust_head">
-    <h2>Tisso vison in the wild</h2>
-    <div class="cust_feat">
-      {% for block in section.blocks %}
-        {% assign product = block.settings.test_prod %}
-        <div class="cust_product_item">
-          {% if block.settings.prod_bann %}
-            <img src="{{ block.settings.prod_bann | img_url:'master' }}">
-          <div class="cust_pls_icon plus-icon-{{ forloop.index }}">
+    {% if section.settings.title != blank %}
+      <h2>{{ section.settings.title }}</h2>
+    {% endif %}
+  </div>
+
+  <div class="cust_feat">
+    {% for block in section.blocks %}
+      {% assign product = block.settings.test_prod %}
+      <div class="cust_product_item">
+        <div class="item_img">
+          {% if block.settings.cust_img %}
+            <img
+              src="{{ block.settings.cust_img | img_url: 'master' }}"
+              alt="{{ product.title }}"
+            >
+            <style>
+              .plus-icon-{{ forloop.index }}{
+                    top: {{ block.settings.padtop }}%;
+                    left: {{ block.settings.padleft }}%;
+              }
+            </style>
+            <div class="cust_pls_icon plus-icon-{{ forloop.index }}">
               <img onclick="openPopup('{{ product.id }}')" src="{{ block.settings.pls_icon | img_url : 'master' }}">
             </div>
           {% else %}
-            <img src="{{ product.featured_image | img_url:'master' }}">
+            <img
+              src="{{ product.featured_image | img_url: 'master' }}"
+              alt="{{ product.title }}"
+              onclick="openPopup('{{ product.id }}')"
+            >
           {% endif %}
         </div>
-        <div class="popup-container">
+        <div class="popup-container" id="popup-{{ product.id }}">
           <div class="popup-header">
-            <img src="{{ product.featured_image | img_url : 'master' }}" alt="{{ product.title }}">
+            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+            <div class="pop_head">
+              <h3>{{ product.title }}</h3>
+              <p class="pop_prc">{{ product.price | money }}</p>
+              <p class="pop_desc">{{ product.description | strip_html | truncate: 100 }}</p>
+            </div>
+            <span class="close-btn" onclick="closePopup('{{ product.id }}')">×</span>
           </div>
-          <div class="popup_head">
-            <h3>{{ product.title }}</h3>
-            <p class="pop_prc">{{ product.price | money }}</p>
-            <p class="pop_desc">{{ product.description | strip_html | truncate:100 }}</p>
-              <span class="close-btn" onclick="closePopup('{{ product.id }}')">×</span>            
-          </div>
+
           <div class="popup-content">
-            <form class="" method="post" action="/cart/add">
+            <form method="post" action="/cart/add">
               <input type="hidden" name="id" id="variant-id-{{ product.id }}" value="{{ product.variants.first.id }}">
 
-               <!-- Color Options (Above Size) -->
+              <!-- Color Options (Above Size) -->
               {% assign color_values = '' %}
               {% assign size_values = '' %}
 
-             {% for option in product.options %}
+              {% for option in product.options %}
                 {% assign option_name = option | downcase %}
                 {% assign option_index = forloop.index0 %}
 
@@ -60,20 +79,42 @@
                   </div>
                 {% endif %}
               {% endfor %}
+
               
-              
-            <button type="submit"> add to cart{{  }}</button>
+
+{% for option in product.options %}
+    {% assign option_name = option | downcase %}
+    {% assign option_index = forloop.index0 %}
+
+    {% if option_name == 'size' %}
+        <label>{{ option }}</label>
+        <div class="size_icon_cust" onclick="toggleSizeDropdown(event, this)">
+            <select class="size-dropdown" data-product-id="{{ product.id }}" onchange="updateVariant('{{ product.id }}')">
+                {% assign first_option = true %}
+                {% for variant in product.variants %}
+                    {% assign size_value = variant.options[option_index] %}
+                    {% unless size_values contains size_value %}
+                        <option value="{{ size_value }}" {% if first_option %}selected{% assign first_option = false %}{% endif %}>{{ size_value }}</option>
+                        {% assign size_values = size_values | append: ',' | append: size_value %}
+                    {% endunless %}
+                {% endfor %}
+            </select>
+            <img class="size_arrow" src="https://cdn.shopify.com/s/files/1/0612/4283/5010/files/Vector.png" alt="Arrow Icon">
+        </div>
+    {% endif %}
+{% endfor %}
+              <button type="submit" class="add-to-cart-btn">ADD TO CART →</button>
             </form>
-            
           </div>
-          <!-- JSON data specific to each product -->
+        </div>
+
+        <!-- JSON data specific to each product -->
         <script>
           window.productVariants_{{ product.id }} = {{ product.variants | json }};
         </script>
         <div class="popup-overlay" id="overlay-{{ product.id }}" onclick="closePopup('{{ product.id }}')"></div>
-        </div>
-      {% endfor %}
-    </div>
+      </div>
+    {% endfor %}
   </div>
 </div>
 
