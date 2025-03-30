@@ -40,12 +40,16 @@
                   <label>{{ option }}</label>
                   <div class="color-options">
                     {% for variant in product.variants  %}
-                      {% assign color_value = variant.options[0] %}
+                      {% assign color_value = variant.options[option_index] %}
+                      {% unless color_values contains color_value %}
+                        
+                     
                       <div class="color-option bdr">
                         <span>
                           {{ color_values }}
                         </span>
                       </div>
+                         {% endunless %}
                       
 
                       
