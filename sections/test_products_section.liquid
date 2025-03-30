@@ -7,8 +7,8 @@
         <div class="cust_product_item">
           {% if block.settings.prod_bann %}
             <img src="{{ block.settings.prod_bann | img_url:'master' }}">
-            <div class="cust_pls_icon">
-              <img src="{{ block.settings.pls_icon | img_url: 'master' }}">
+          <div class="cust_pls_icon plus-icon-{{ forloop.index }}">
+              <img onclick="openPopup('{{ product.id }}')" src="{{ block.settings.pls_icon | img_url : 'master' }}">
             </div>
           {% else %}
             <img src="{{ product.featured_image | img_url:'master' }}">
