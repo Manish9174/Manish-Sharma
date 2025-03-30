@@ -79,6 +79,12 @@
 
 <script>
 
+  function openPopup(productId){
+    document.getElementById(`popup-${productId}`).classList.add('active');
+    document.getElementById(`overlay-${productId}`).classList.add('active');
+  }
+  
+
   function selectColorVariant(element, productId){
     document.querySelectorAll('#popup-${productId} .color-option').forEach(option =>
       option.classList.remove('active'));
