@@ -43,6 +43,7 @@
                       {% assign color_value = variant.options[option_index] %}
                       {% unless color_values contains color_value %}                   
                       <div class="color-option bdr">
+                        <span style="background-color{{ color_value }};" class="cust_clr"></span>
                         <span>
                           {{ color_value }}
                         </span>
