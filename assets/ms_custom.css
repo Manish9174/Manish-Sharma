@@ -564,52 +564,7 @@ a{
     .bdr-2{
       border-left: none;
     }
-   .size_icon_cust {
-        background-color: #f1f1f1;
-        cursor: pointer;
-        padding: 10px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 18px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: background 0.3s ease;
-        position: relative;
-    }
-    .size_icon_cust:hover {
-        background-color: #ddd;
-    }
-    .size_arrow {
-        width: 20px;
-        height: 20px;
-        transition: transform 0.3s ease;
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .size-dropdown {
-        width: 100%;
-        font-size: 14px;
-        margin-top: 10px;
-        display: none;
-        background-color: white;
-        border: 0.5px solid #000000;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 10;
-        padding: 10px;
-    }
-    .dropdown-open .size-dropdown {
-        display: block;
-    }
-    .dropdown-open .size_arrow {
-        transform: translateY(-50%) rotate(180deg);
-    }
+
 
 
 
