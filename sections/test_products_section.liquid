@@ -32,35 +32,34 @@
               {% assign color_values = '' %}
               {% assign size_values = '' %}
 
-              {% for option in product.options %}
-               {% assign option_name = option | downcase %}
+             {% for option in product.options %}
+                {% assign option_name = option | downcase %}
                 {% assign option_index = forloop.index0 %}
 
                 {% if option_name == 'color' %}
                   <label>{{ option }}</label>
+
                   <div class="color-options">
-                    {% for variant in product.variants  %}
+                    {% for variant in product.variants %}
                       {% assign color_value = variant.options[option_index] %}
-                      {% unless color_values contains color_value %}                   
-                      <div class="color-option bdr">
-                        <span style="background-color{{ color_value }};" class="cust_clr"></span>
-                        <span>
-                          {{ color_value }}
-                        </span>
-                      </div>
-                         {% endunless %}
-                      
+                      {% unless color_values contains color_value %}
+                        <div
+                          class="color-option bdr-{{ forloop.index }}"
+                          data-color="{{ color_value }}"
+                          data-variant-id="{{ variant.id }}"
+                          data-product-id="{{ product.id }}"
+                          onclick="selectColorVariant(this, '{{ product.id }}')"
+                        >
+                          <span style="background-color: {{ color_value }};" class="cust_clr"> </span>
+                          <span>{{ color_value }}</span>
+                        </div>
 
-                      
-                      {% endfor %}
-
-                    
-                    
-                    
+                        {% assign color_values = color_values | append: ',' | append: color_value %}
+                      {% endunless %}
+                    {% endfor %}
                   </div>
-                  
-                  {% endif %}
-                {% endfor %}
+                {% endif %}
+              {% endfor %}
               
               
             <button type="submit"> add to cart{{  }}</button>
@@ -72,6 +71,18 @@
     </div>
   </div>
 </div>
+
+<script>
+
+  function selectColorVariant(element, productId){
+    document.querySelectorAll('#popup-${productId} .color-option').forEach(option =>
+      option.classList.remove('active'));
+    element.classList.add(active);
+    updateVariant(productId);
+      
+  }
+  
+</script>
 
 {% schema %}
 {
