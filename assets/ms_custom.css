@@ -645,7 +645,11 @@ text-align: left;
   }
 
 
-
+      @media only screen and (max-width: 749px) {
+      .cust_product_item{
+        width:47%;
+      }
+      }
 
 
 
