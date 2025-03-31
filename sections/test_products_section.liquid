@@ -34,13 +34,13 @@
         </div>
         <div class="popup-container" id="popup-{{ product.id }}">
           <div class="popup-header">
-            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+            <img class="feat_img_pop" src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
             <div class="pop_head">
               <h3>{{ product.title }}</h3>
               <p class="pop_prc">{{ product.price | money }}</p>
               <p class="pop_desc">{{ product.description | strip_html | truncate: 100 }}</p>
             </div>
-            <span class="close-btn" onclick="closePopup('{{ product.id }}')">×</span>
+            <span class="close-btn" onclick="closePopup('{{ product.id }}')"><img height="auto" width="auto" src="https://cdn.shopify.com/s/files/1/0612/4283/5010/files/Group_1000008134.png"></span>
           </div>
 
           <div class="popup-content">
@@ -56,7 +56,7 @@
                 {% assign option_index = forloop.index0 %}
 
                 {% if option_name == 'color' %}
-                  <label>{{ option }}</label>
+                  <label class="test_pop_label">{{ option }}</label>
 
                   <div class="color-options">
                     {% for variant in product.variants %}
@@ -70,7 +70,7 @@
                           onclick="selectColorVariant(this, '{{ product.id }}')"
                         >
                           <span style="background-color: {{ color_value }};" class="cust_clr"> </span>
-                          <span>{{ color_value }}</span>
+                          <span class="color_name">{{ color_value }}</span>
                         </div>
 
                         {% assign color_values = color_values | append: ',' | append: color_value %}
@@ -80,30 +80,34 @@
                 {% endif %}
               {% endfor %}
 
-              
+              {% for option in product.options %}
+                {% assign option_name = option | downcase %}
+                {% assign option_index = forloop.index0 %}
 
-{% for option in product.options %}
-    {% assign option_name = option | downcase %}
-    {% assign option_index = forloop.index0 %}
+                {% if option_name == 'size' %}
+                  <div class="size_main">
+                  <label class="test_pop_label">{{ option }}</label>
+                  <select
+                    class="size-dropdown"
+                    data-product-id="{{ product.id }}"
+                    onchange="updateVariant('{{ product.id }}')"
+                  >
+                                            <option class="size_head">Choose your size </option>
 
-    {% if option_name == 'size' %}
-        <label>{{ option }}</label>
-        <div class="size_icon_cust" onclick="toggleSizeDropdown(event, this)">
-            <select class="size-dropdown" data-product-id="{{ product.id }}" onchange="updateVariant('{{ product.id }}')">
-                {% assign first_option = true %}
-                {% for variant in product.variants %}
-                    {% assign size_value = variant.options[option_index] %}
-                    {% unless size_values contains size_value %}
-                        <option value="{{ size_value }}" {% if first_option %}selected{% assign first_option = false %}{% endif %}>{{ size_value }}</option>
+                    {% for variant in product.variants %}
+                      {% assign size_value = variant.options[option_index] %}
+                      {% unless size_values contains size_value %}
+                        <option class="size_test" value="{{ size_value }}">{{ size_value }}</option>
                         {% assign size_values = size_values | append: ',' | append: size_value %}
-                    {% endunless %}
-                {% endfor %}
-            </select>
-            <img class="size_arrow" src="https://cdn.shopify.com/s/files/1/0612/4283/5010/files/Vector.png" alt="Arrow Icon">
-        </div>
-    {% endif %}
-{% endfor %}
-              <button type="submit" class="add-to-cart-btn">ADD TO CART →</button>
+                      {% endunless %}
+                    {% endfor %}
+                  </select>
+                  </div>
+                {% endif %}
+              {% endfor %}
+
+              <button type="submit" class="add-to-cart-btn">{{ section.settings.atc_btn }}
+                <img class="atc_arrow" src="https://cdn.shopify.com/s/files/1/0644/8830/8805/files/Line_15_1.png"/></button>
             </form>
           </div>
         </div>
@@ -117,7 +121,6 @@
     {% endfor %}
   </div>
 </div>
-
 <script>
     function openPopup(productId) {
         document.getElementById(`popup-${productId}`).classList.add('active');
