@@ -124,7 +124,7 @@
 <script>
     function openPopup(productId) {
         document.getElementById(`popup-${productId}`).classList.add('active');
-        document.getElementById(`overlay-${productId}`).classList.add('active');
+        document.getElementById(`ove4rlay-${productId}`).classList.add('active');
     }
 
     function closePopup(productId) {
@@ -193,6 +193,7 @@
                 "id": "pls_icon",
                 "label": "Icon for Open Popup"
               },
+              
               {
                 "type": "range",
                 "id": "padtop",
@@ -201,8 +202,7 @@
                 "min": 1,
                 "unit": "%",
                 "step": 1,
-                "default":50
-                
+                "default":50                
               },
 
               {
