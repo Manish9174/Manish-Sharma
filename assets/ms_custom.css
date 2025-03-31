@@ -637,13 +637,9 @@ text-align: left;
         width: 33px;
     height: fit-content;
   }
-
-
   .size_main{
     padding: 7px 0px 0px;
   }
-
-
       @media only screen and (max-width: 749px) {
       .cust_product_item{
         width:47%;
