@@ -76,7 +76,6 @@
 
       @media only screen and (max-width: 749px) {
 
-
         .bann_btn_2{
                  padding: 15px 15px !important;
         font-size: 12px !important;
@@ -110,6 +109,7 @@
               text-align: center;
     padding: 5rem 20px 2rem;
         }
+        
         .bann_cont_mob h1, p{
           margin:0px;
         }
