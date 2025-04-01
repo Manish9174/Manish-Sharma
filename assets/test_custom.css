@@ -667,6 +667,10 @@ text-align: left;
           flex-wrap:wrap;
           justify-content: center;
         }
+
+        .cust_head{
+          padding:0px;
+        }
       }
 
 
