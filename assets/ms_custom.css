@@ -394,7 +394,8 @@ a{
     }
 
     .cust_product_item{
-      width: 32%;
+        float: left;
+  width: 33.33%;
     }
 
     .item_img img{
