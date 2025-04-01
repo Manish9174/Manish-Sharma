@@ -33,8 +33,6 @@
   text-transform:uppercase;
 }
 
-
-   
         /* Pseudo-element for sliding effect */
         .head_btn::before {
             content: "";
