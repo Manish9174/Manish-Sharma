@@ -58,8 +58,8 @@
             "test_prod": "classic-varsity-top",
             "cust_img": "shopify://shop_images/image_826.png",
             "pls_icon": "shopify://shop_images/Group_1000008190.png",
-            "padtop": 50,
-            "padleft": 50
+            "padtop": 26,
+            "padleft": 49
           }
         },
         "slide_CTWrUq": {
