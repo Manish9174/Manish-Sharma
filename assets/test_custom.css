@@ -391,7 +391,6 @@ a{
       padding: 7rem 0px 10px;
 }
     .cust_feat {
-    gap: 1rem;
   padding: 0px 0px 4rem;
   display: table;
       clear: both;
@@ -666,6 +665,7 @@ text-align: left;
         .cust_feat{
           display:flex!important;
           flex-wrap:wrap;
+          justify-content: center;
         }
       }
 
