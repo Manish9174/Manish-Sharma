@@ -374,20 +374,28 @@ a{
 /* test banner css*/
 
 
+
+
+
+
 /*test products section css*/
 
+
     .cust_feat {
-          flex-wrap: wrap;
-      gap: 1rem;
-      padding: 0px 0px 4rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    gap: 1rem;
+  padding: 0px 0px 4rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  clear: both;
+  grid-template-columns: 1fr 1fr 1fr;
+
     }
 
     .cust_product_item{
           display: flex;
-      width: 30%;
+      width: 100%;
       align-items: center;
     }
 
