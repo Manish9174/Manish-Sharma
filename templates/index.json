@@ -9,24 +9,6 @@
  */
 {
   "sections": {
-    "ms_banner_tBWWWk": {
-      "type": "ms_banner",
-      "settings": {
-        "logo": "shopify://shop_images/Group_1000007777.png",
-        "head_cnt": "Find the ideal gift for your loved ones.",
-        "top_btn": "choose gift",
-        "btn_url": "shopify://collections",
-        "bann_img": "shopify://shop_images/Frame.png",
-        "bann_head": "The Gift Guide",
-        "bann_parg": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
-        "bann_btn": "Shop Now",
-        "bann_btn_url": "shopify://collections/all",
-        "sec_bann": "shopify://shop_images/Frame_2.png",
-        "btm_cont": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
-        "mobtxt": "Find the ideal gift for your loved ones.",
-        "mobbtn": "choose Gift"
-      }
-    },
     "test_products_section_7RKRpE": {
       "type": "test_products_section",
       "blocks": {
@@ -47,7 +29,7 @@
             "cust_img": "shopify://shop_images/image_823.png",
             "pls_icon": "shopify://shop_images/Group_1000008190.png",
             "padtop": 50,
-            "padleft": 50
+            "padleft": 48
           }
         },
         "slide_38Lkah": {
@@ -100,12 +82,12 @@
         "slide_CTWrUq"
       ],
       "settings": {
-        "title": "Tisso vison in the wild"
+        "title": "Tisso vison in the wild",
+        "atc_btn": "Add To Cart"
       }
     }
   },
   "order": [
-    "ms_banner_tBWWWk",
     "test_products_section_7RKRpE"
   ]
 }
