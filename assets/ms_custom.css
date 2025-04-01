@@ -386,10 +386,11 @@ a{
   padding: 0px 0px 4rem;
   display: table;
       clear: both;
-
-
-
     }
+
+.cust_head{
+  padding: 1rem 0px 2rem;
+}
 
     .cust_product_item{
         float: left;
