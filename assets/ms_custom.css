@@ -381,24 +381,20 @@ a{
 /*test products section css*/
 
 .test_products{
-  display: flex;
-  width: 100%;
-  margin: auto;
+  
 }
     .cust_feat {
     gap: 1rem;
   padding: 0px 0px 4rem;
-  display: grid;
+  display: table;
   justify-content: center;
   align-items: center;
-  float: left;
-  clear: both;
-  grid-template-columns: 1fr 1fr 1fr;
+
 
     }
 
     .cust_product_item{
-      width: 100%;
+      width: 32%;
     }
 
     .item_img img{
