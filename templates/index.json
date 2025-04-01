@@ -38,7 +38,7 @@
             "test_prod": "chequered-red-shirt",
             "cust_img": "shopify://shop_images/image_824.png",
             "pls_icon": "shopify://shop_images/Group_1000008190.png",
-            "padtop": 50,
+            "padtop": 24,
             "padleft": 50
           }
         },
