@@ -380,7 +380,11 @@ a{
 
 /*test products section css*/
 
-
+.test_products{
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
     .cust_feat {
     gap: 1rem;
   padding: 0px 0px 4rem;
