@@ -396,6 +396,7 @@ a{
     .cust_product_item{
         float: left;
   width: 33.33%;
+      padding:5px;
     }
 
     .item_img img{
