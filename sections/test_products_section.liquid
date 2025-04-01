@@ -30,6 +30,15 @@
               alt="{{ product.title }}"
               onclick="openPopup('{{ product.id }}')"
             >
+              <style>
+              .plus-icon-{{ forloop.index }}{
+                    top: {{ block.settings.padtop }}%;
+                    left: {{ block.settings.padleft }}%;
+              }
+            </style>
+            <div class="cust_pls_icon plus-icon-{{ forloop.index }}">
+              <img onclick="openPopup('{{ product.id }}')" src="{{ block.settings.pls_icon | img_url : 'master' }}">
+            </div>
           {% endif %}
         </div>
         <div class="popup-container" id="popup-{{ product.id }}">
