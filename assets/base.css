@@ -1643,7 +1643,7 @@ details[open] > .share-button__fallback {
   border-radius: var(--inputs-radius);
 }
 
-.field__input:focus-visible,
+/* .field__input:focus-visible,
 .select__select:focus-visible,
 .customer .field input:focus-visible,
 .customer select:focus-visible,
@@ -1652,7 +1652,7 @@ details[open] > .share-button__fallback {
   outline: 0;
   border-radius: var(--inputs-radius);
 }
-
+ */
 .field__input:focus,
 .select__select:focus,
 .customer .field input:focus,
@@ -1958,11 +1958,11 @@ input[type='checkbox'] {
   pointer-events: none;
 }
 
-.quantity__button:focus-visible,
+/* .quantity__button:focus-visible,
 .quantity__input:focus-visible {
   background-color: rgb(var(--color-background));
   z-index: 2;
-}
+} */
 
 .quantity__button:focus,
 .quantity__input:focus {
@@ -1970,11 +1970,11 @@ input[type='checkbox'] {
   z-index: 2;
 }
 
-.quantity__button:not(:focus-visible):not(.focused),
+/* .quantity__button:not(:focus-visible):not(.focused),
 .quantity__input:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
   background-color: inherit;
-}
+} */
 
 .quantity__input:-webkit-autofill,
 .quantity__input:-webkit-autofill:hover,
