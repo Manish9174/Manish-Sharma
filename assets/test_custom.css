@@ -662,6 +662,10 @@ text-align: left;
       .cust_product_item{
         width:47%;
       }
+
+        .cust_feat{
+          display:flex;
+        }
       }
 
 
