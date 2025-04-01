@@ -378,8 +378,8 @@ a{
 
 /*test products section css*/
 
-.test_products{
-  
+.main_feat_section{
+      padding: 7rem 0px 10px;
 }
     .cust_feat {
     gap: 1rem;
