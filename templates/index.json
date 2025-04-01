@@ -9,6 +9,24 @@
  */
 {
   "sections": {
+    "test_banner_section_icTVWX": {
+      "type": "test_banner_section",
+      "settings": {
+        "logo": "shopify://shop_images/Group_1000007777.png",
+        "head_cnt": "Find the ideal gift for your loved ones.",
+        "top_btn": "choose gift",
+        "btn_url": "shopify://collections",
+        "bann_img": "shopify://shop_images/Frame.png",
+        "bann_head": "The Gift Guide",
+        "bann_parg": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+        "bann_btn": "Shop Now",
+        "bann_btn_url": "shopify://collections",
+        "sec_bann": "shopify://shop_images/Frame_2.png",
+        "btm_cont": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+        "mobtxt": "Find the ideal gift for your loved ones.",
+        "mobbtn": "choose Gift"
+      }
+    },
     "test_products_section_7RKRpE": {
       "type": "test_products_section",
       "blocks": {
@@ -88,6 +106,7 @@
     }
   },
   "order": [
+    "test_banner_section_icTVWX",
     "test_products_section_7RKRpE"
   ]
 }
