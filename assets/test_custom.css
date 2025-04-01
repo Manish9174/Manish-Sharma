@@ -664,7 +664,8 @@ text-align: left;
       }
 
         .cust_feat{
-          display:flex;
+          display:flex!important;
+          flex-wrap:wrap;
         }
       }
 
